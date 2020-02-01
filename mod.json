@@ -1,0 +1,7 @@
+{
+	"name": "local-settings",
+	"update": "github:tera-mods/local-settings",
+	"title": "Local Settings",
+	"author": "Pinkie Pie",
+	"description": "Stores UI and chat settings locally instead of per-account."
+}
