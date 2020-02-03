@@ -9,8 +9,6 @@ module.exports = function LocalSettings(mod) {
 
 	// UI
 	mod.hook('C_REQUEST_CLIENT_UI_SETTING', 1, event => {
-		accountId = event.accountId
-
 		if(mod.settings.ui) {
 			mod.send('S_REPLY_CLIENT_UI_SETTING', 1, {
 				accountId: event.accountId,
