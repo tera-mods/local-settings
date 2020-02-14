@@ -31,7 +31,7 @@ module.exports = function LocalSettings(mod) {
 
 	mod.hook('S_REPLY_CLIENT_UI_SETTING', 2, event => {
 		if(mod.settings.ui) return false
-		for(let ui in event.uis) ui.locked = Boolean(ui.locked)
+		for(let ui of event.uis) ui.locked = Boolean(ui.locked)
 		mod.settings.ui = event.uis
 	})
 
